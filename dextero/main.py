@@ -37,16 +37,20 @@ def get_definition(word, max_count):
                 text = c.get_text(strip=True)
                 print(f'{tab} - {text}')
         print()
-
-if __name__ == "__main__":
+        
+def main():
     if len(sys.argv) < 2 or len(sys.argv) > 3:
-        print("Utilizare: python script.py <cuvant> <optional: numar maxim definitii (default 3)>")
+        print("Utilizare: python main.py <cuvant> <optional: numar maxim definitii (default 3)>")
         sys.exit(1)
     
     word = sys.argv[1]
     
-    if(len(sys.argv) == 3):
+    if len(sys.argv) == 3:
         max_count = int(sys.argv[2])
     else:
         max_count = 3
+    
     get_definition(word, max_count)
+
+if __name__ == "__main__":
+    main()
