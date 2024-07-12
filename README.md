@@ -7,4 +7,4 @@ usage: 'dextero <cuvant> <optional: numar maxim definitii (default 3)>'
 ### Installation
 <!> pre-requisites: 'requests', 'beautifulsoup4'.
 
-inside the dextero folder, run ```pipx install .```.
+inside the dextero folder, run ```pipx install .```
